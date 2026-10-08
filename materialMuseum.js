@@ -203,10 +203,16 @@ scene.add(sphere);
 
 createPedestal(-3, -4);
 
+const plasticMaterial =
+    new THREE.MeshPhongMaterial({
+        color: 0x00bcd4,
+        shininess: 100
+    })
+
 const cube =
     new THREE.Mesh(
         new THREE.BoxGeometry(2,2,2),
-        cyanMaterial
+        plasticMaterial
     );
 
 placeOnPedestal(cube, -3, -4);
