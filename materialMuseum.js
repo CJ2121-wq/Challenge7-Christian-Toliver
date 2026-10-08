@@ -243,10 +243,20 @@ scene.add(cube);
 
 createPedestal(3, -4);
 
+const crystalMaterial =
+    new THREE.MeshPhysicalMaterial({
+        color: 0x88ccff,
+        metalness: 0.0,
+        roughness: 0.1,
+        transmission: 0.8,
+        transparent: true,
+        opacity: 0.9
+    });
+
 const crystal =
     new THREE.Mesh(
         new THREE.OctahedronGeometry(1.5),
-        yellowMaterial
+        crystalMaterial
     );
 
 placeOnPedestal(crystal, 3, -4);
@@ -362,10 +372,19 @@ scene.add(tree);
 
 createPedestal(0, 0);
 
+const mysteryMaterial =
+    new THREE.MeshPhysicalMaterial({
+        color: 0x88ccff,
+        metalness: 0.1,
+        roughness: 0.2,
+        clearcoat: 1.0,
+        clearRoughness: 0.1
+    })
+
 const mystery =
     new THREE.Mesh(
         new THREE.DodecahedronGeometry(1.5),
-        whiteMaterial
+        mysteryMaterial
     );
 
 placeOnPedestal(mystery, 0, 0);
