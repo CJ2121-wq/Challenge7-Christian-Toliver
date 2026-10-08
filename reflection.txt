@@ -1,0 +1,18 @@
+1. Which material looked the most realistic?
+
+The MeshStandardMaterial on the gold sphere looked the most realistic because the metalness and roughness made it react to the lighting like a shiny metal object.
+
+
+2. Which material looked the most cartoon-like?
+
+The MeshToonMaterial on the statue looked the most cartoon-like because the lighting looked more simple and stylized.
+
+
+3. Which material would you use for a metal robot?
+
+I would use MeshStandardMaterial for a metal robot because the metalness and roughness properties can create a realistic metallic appearance.
+
+
+4. How did adding the spotlight affect the scene?
+
+Adding the spotlight made the gold sphere stand out more and created stronger lighting and shadows around that exhibit.
