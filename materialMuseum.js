@@ -309,6 +309,12 @@ scene.add(normalObject);
 
 createPedestal(9, 5);
 
+const treeMaterial =
+    new THREE.MeshLambertMaterial({
+        color: 0x2ecc71
+       
+    });
+
 const tree =
     new THREE.Mesh(
         new THREE.CylinderGeometry(
@@ -317,7 +323,7 @@ const tree =
             3,
             6
         ),
-        greenMaterial
+        treeMaterial
     );
 
 placeOnPedestal(tree, 9, 5);
