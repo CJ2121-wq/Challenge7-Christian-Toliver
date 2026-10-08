@@ -78,8 +78,9 @@ const floorGeometry =
     new THREE.PlaneGeometry(40, 40);
 
 const floorMaterial =
-    new THREE.MeshBasicMaterial({
-        color: 0x444444
+    new THREE.MeshStandardMaterial({
+        color: 0x444444,
+        roughness: 0.8
     });
 
 const floor =
@@ -200,6 +201,26 @@ placeOnPedestal(sphere, -9, -4);
 sphere.castShadow = true;
 
 scene.add(sphere);
+
+const spotLight =
+    new THREE.SpotLight(
+        0xffffff,
+        500
+    );
+
+    spotLight.position.set(
+        -9,
+        10,
+        2
+    );
+
+    spotLight.target = sphere;
+    spotLight.angle = Math.PI / 6;
+    spotLight.penumbra = 0.3;
+
+    spotLight.castShadow = true;
+
+    scene.add(spotLight);
 
 createPedestal(-3, -4);
 
