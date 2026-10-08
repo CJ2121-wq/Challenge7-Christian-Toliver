@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-
+//Step 1 Questions
+//The museum currently uses MeshBasicMaterial throughout the scene.
+//The objects appear flat and similar because MeshBasicMaterial does not react realistically to lighting.
 // ---------------------------------------------------
 // Scene
 // ---------------------------------------------------
