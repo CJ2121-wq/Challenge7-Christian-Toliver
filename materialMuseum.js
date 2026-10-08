@@ -291,6 +291,9 @@ scene.add(pyramid);
 
 createPedestal(3, 5);
 
+const normalMaterial = 
+    new THREE.MeshNormalMaterial();
+
 const normalObject =
     new THREE.Mesh(
         new THREE.TorusKnotGeometry(
@@ -299,7 +302,7 @@ const normalObject =
             100,
             16
         ),
-        purpleMaterial
+        normalMaterial
     );
 
 placeOnPedestal(normalObject, 3, 5);
