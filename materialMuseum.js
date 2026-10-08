@@ -183,10 +183,17 @@ const blueMaterial =
 
 createPedestal(-9, -4);
 
+const goldMaterial =
+    new THREE.MeshStandardMaterial({
+        color: 0xffd700,
+        metalness: 1.0,
+        roughness: 0.2
+    });
+
 const sphere =
     new THREE.Mesh(
         new THREE.SphereGeometry(1, 32, 32),
-        redMaterial
+        goldMaterial
     );
 
 placeOnPedestal(sphere, -9, -4);
