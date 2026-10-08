@@ -235,10 +235,15 @@ scene.add(crystal);
 
 createPedestal(9, -4);
 
+const toonMaterial = 
+    new THREE.MeshToonMaterial({
+        color: 0xff4fd8
+    })
+
 const statue =
     new THREE.Mesh(
         new THREE.ConeGeometry(1,3,32),
-        magentaMaterial
+        toonMaterial
     );
 
 placeOnPedestal(statue, 9, -4);
